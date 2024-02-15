@@ -1,0 +1,40 @@
+@import "../../../style/variables.scss";
+.keyboard-btn {
+  padding: 20px 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.7em;
+  cursor: pointer;
+  transition: 0.1s all ease;
+  &.value {
+    background-color: $value-btn-bg;
+    color: black;
+  }
+  &.operator {
+    background-color: $operator-btn-bg;
+    color: #fff;
+    path {
+      stroke: #fff;
+    }
+    &.active {
+      filter: brightness(0.6);
+    }
+  }
+  &.clear {
+    background-color: $clear-btn-bg;
+    color: #fff;
+  }
+  &:hover {
+    filter: brightness(0.6);
+  }
+}
+@media (max-width: 576px) {
+  .keyboard-btn {
+    &:hover {
+      filter: none;
+    }
+  }
+}

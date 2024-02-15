@@ -1,0 +1,20 @@
+@import "./style/variables.scss";
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+#app {
+  background-color: $calculator-bg;
+  border-radius: 12px;
+  font-size: 1rem;
+  padding: 16px;
+}
+@media (max-width: 590px) {
+  #app {
+    font-size: 0.9rem;
+    padding: 16px 12px;
+  }
+  .container {
+    width: 90%;
+  }
+}

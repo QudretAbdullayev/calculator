@@ -1,0 +1,20 @@
+#keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+  .row {
+    display: grid;
+    gap: 8px;
+    padding: 0 8px;
+    &:nth-child(1) {
+      grid-template: 1fr / repeat(5, 1fr);
+    }
+    &:nth-child(2) {
+      grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    }
+    &:nth-child(3) {
+      grid-template: 1fr / 2.5fr 1fr;
+    }
+  }
+}

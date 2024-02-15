@@ -1,0 +1,9 @@
+@import "./reset.scss";
+@import "./variables.scss";
+body {
+  background-color: $body-bg;
+  padding-top: 100px;
+}
+* {
+  font-family: $primary-font;
+}
